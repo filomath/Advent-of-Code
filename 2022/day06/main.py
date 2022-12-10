@@ -14,7 +14,6 @@ def find_marker(buffer, length):
     while len(set(buffer[i-length+1:i] + buffer[i])) < length: i += 1
     return i+1
 
-
 if __name__ == "__main__":
     buffer = get_buffer("input.txt")
     print(find_marker(buffer, 4)) # Part One
